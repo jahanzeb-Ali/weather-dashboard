@@ -28,7 +28,7 @@ export default function WeatherApp() {
         setError(null)
       }
     } catch (err) {
-      setError("Failed to fetch weather data")
+      setError("Failed to fetch weather data" + err)
       setWeather(null)
     } finally {
       setLoading(false)
